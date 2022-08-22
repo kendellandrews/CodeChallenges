@@ -1,72 +1,72 @@
-// /*
-//   Some of the following questions will ask you to use
-//   arrow function syntax. On the problems that don't,
-//   feel free to practice with any syntax.
-// */
+// // /*
+// //   Some of the following questions will ask you to use
+// //   arrow function syntax. On the problems that don't,
+// //   feel free to practice with any syntax.
+// // */
 
 
-// ////////////////// PROBLEM 1 ////////////////////
-// /*
-//   Create a function called helloWorld which simply console logs 'Hello, World!'
-//   Call the function.
-// */
+// // ////////////////// PROBLEM 1 ////////////////////
+// // /*
+// //   Create a function called helloWorld which simply console logs 'Hello, World!'
+// //   Call the function.
+// // */
 
-// //CODE HERE
-// function hellowWorld(){
-//   return 'Hello, World!'
-// } console.log('Hello, World!')
+// // //CODE HERE
+function hellowWorld(){
+  return 'Hello, World!'
+} console.log('Hello, World!')
 
-// ////////////////// PROBLEM 2 ////////////////////
+// // ////////////////// PROBLEM 2 ////////////////////
 
-// /*
-//     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
-// */
+// // /*
+// //     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
+// // */
 
-// //CODE HERE
+// // //CODE HERE
 const jsNinja = () => {
   return 'I am a JavaScript ninja!'} 
 
-// ////////////////// PROBLEM 3 ////////////////////
-// /*
-//   Create a function called printName which takes in a person's name and console logs it.
-//   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
-//   Call the function, passing in an argument.
-// */
+// // ////////////////// PROBLEM 3 ////////////////////
+// // /*
+// //   Create a function called printName which takes in a person's name and console logs it.
+// //   Ex. If 'Cameron' were passed in as the argument, Cameron would be console logged.
+// //   Call the function, passing in an argument.
+// // */
 
-// //CODE HERE
+// // //CODE HERE
 function printName(name) {
   console.log(name)
 }
 printName('kendell')
 
-// ////////////////// PROBLEM 4 ////////////////////
-// /*
-//   Create a function called greeting that
-//   accepts name as its only parameter.
-//   greeting should log the string 'Hello, '
-//   plus the value of the name parameter.
-//   Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
-//   Make sure to call your function and pass in an argument.
-// */
+// // ////////////////// PROBLEM 4 ////////////////////
+// // /*
+// //   Create a function called greeting that
+// //   accepts name as its only parameter.
+// //   greeting should log the string 'Hello, '
+// //   plus the value of the name parameter.
+// //   Ex. If Jake were passed in as the argument, the function would log 'Hello, Jake'
+// //   Make sure to call your function and pass in an argument.
+// // */
 
-// //CODE HERE
+// // //CODE HERE
 function greeting(name){
   console.log(`Hello, ${name}`);
 } 
 greeting('Kendell')
 
-// ////////////////// PROBLEM 5 ////////////////////
+// // ////////////////// PROBLEM 5 ////////////////////
 
-// /*
-//     Write an arrow function called 'compareNums' that takes in 2 parameters, 
-//     which will be numbers. 
-//     The function should return the bigger number. 
-//     If the numbers are the same, just return the number.
+// // /*
+// //     Write an arrow function called 'compareNums' that takes in 2 parameters, 
+// //     which will be numbers. 
+// //     The function should return the bigger number. 
+// //     If the numbers are the same, just return the number.
 
-//     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
-// */
+// //     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
+// // */
 
-// //CODE HERE
+// // //CODE HERE
 const compareNums = (num1, num2) =>{
 
   if(num1 > num2){
@@ -75,8 +75,8 @@ const compareNums = (num1, num2) =>{
     return num2
   }
 
-}
-console.log(compareNums(7, 5))
+// }
+// console.log(compareNums(7, 5))
 // ////////////////// PROBLEM 6 ////////////////////
 // /*
 //   Create a function called add that takes in two parameters 
@@ -86,7 +86,14 @@ console.log(compareNums(7, 5))
 // */
 
 // //CODE HERE
+function add(num1, num2) {
+  num1 = +num1
+  num2 = +num2
+  return num1 + num2
+}
 
+let sum = add(10,5)
+console.log(sum)
 
 // ////////////////// PROBLEM 7 ////////////////////
 
@@ -101,7 +108,7 @@ console.log(compareNums(7, 5))
 
 // // console.log('arrow')
 // // console.log('declaration')
-// // console.log('expression')
+console.log('expression')
 
 
 
@@ -116,7 +123,7 @@ console.log(compareNums(7, 5))
 //   return str.toUpperCase() + '!!!'
 // }
 
-// // console.log('arrow')
+console.log('arrow')
 // // console.log('declaration')
 // // console.log('expression')
 
@@ -126,8 +133,11 @@ console.log(compareNums(7, 5))
 
 //   Brownie points if you use a template string
 // */
-
-
+// const exclaimTwo = str => {return str.toUpperCase() + '!!!'}
+str = 'I love coding';
+str = str.toUpperCase();
+const exclaimThree = str => {return str.toUpperCase() + '!!!'}
+ console.log(str + '!!!')
 
 // ////////////////// PROBLEM 9 ////////////////////
 
@@ -141,7 +151,7 @@ console.log(compareNums(7, 5))
 // }
 
 // // console.log('arrow')
-// // console.log('declaration')
+console.log('declaration')
 // // console.log('expression')
 
 

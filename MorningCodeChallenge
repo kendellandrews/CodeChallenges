@@ -1,0 +1,18 @@
+const array = [1, 4, 11, 2, 37, 0]
+
+//for loop itterating over the array
+//nested for loop to compare the rest of array
+//if the numbers add to zero, break log true
+
+let addsToZero = false
+
+for(let i = 0; i < array.length; i++){
+  for(let j = i + 1; j< array.length; j++){
+    if(array[i] + array[j] === 0){
+      addsToZero = true
+      break
+    }
+  }
+}
+
+console.log(addsToZero)
